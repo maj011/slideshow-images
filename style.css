@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+html, body {
+  background-color: steelblue;
+  height: 100vh;
+}
+main {
+  padding: 50px;
+}
+
+.main-container {
+  background-color: rgb(212, 69, 69);
+  padding: 30px 50px 70px 50px;
+  height: 80vh;
+  width: 50vw;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  animation-name: back-anim; 
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes back-anim {
+  0% {
+    background-color: #81a2c4;
+  }
+  15% {
+    background-color: #965656;
+  }
+  30% {
+    background-color: #997857;
+  }
+  45% {
+    background-color: #A1A15A;
+  }
+  60% {
+    background-color: #9ED763;
+  }
+  75% {
+    background-color: #506D8A;
+  }
+  90% {
+    background-color: #815A8F;
+  }
+  100% {
+    background-color: #663399;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  background-color: #717171;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 5px;
+}
+
+.mySlides {
+  background-color: white;
+  display: none;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  opacity: 0;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  opacity: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.9);
+  color: aliceblue;
+  opacity: 1;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
